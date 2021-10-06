@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>54</x>
+      <y>171</y>
+      <w>225</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>Inversor
+--
+-nombre: string
+--
++Inversor(nombre: string)
++agregarInversion(inversion: Inversion)
++valorActual():double
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>756</x>
+      <y>477</y>
+      <w>234</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>InversionEnAcciones
+--
+-nombre: string
+-cantidad: int
+-valorUnitario: double
+--
++InversionEnAcciones(nombr: string
+	cantidad: int
+	valorUnitario: double
+)
++valorActual()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>477</y>
+      <w>342</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>InversionEnPlazoFijo
+--
+-fechaDeConstitucion: LocalDate
+-montoDepositado: double
+-porcentajeInteresDiario: double
+--
++InversionEnPlazoFijo(fechaDeConstitucion: Localdate
+	montoDepositado: double
+	porcentajeInteresDiario: double
+)
++valorActual()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>495</x>
+      <y>171</y>
+      <w>189</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>Inversion
+&lt;&lt;Interface&gt;&gt;
+--
+
+--
+/+valorActual()/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>585</x>
+      <y>333</y>
+      <w>27</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>513</x>
+      <y>360</y>
+      <w>171</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>657</x>
+      <y>360</y>
+      <w>162</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;160.0;20.0;160.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>360</y>
+      <w>144</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>140.0;20.0;10.0;20.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>225</y>
+      <w>243</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+inversiones
+m2=0..*</panel_attributes>
+    <additional_attributes>10.0;20.0;250.0;20.0</additional_attributes>
+  </element>
+</diagram>

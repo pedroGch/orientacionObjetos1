@@ -2,6 +2,10 @@ package ar.edu.unlp.oo1.CeuntasConGanchos;
 
 public class CajaDeAhorro extends Cuenta {
 	
+	public CajaDeAhorro() {
+		
+	}
+	
 	@Override
 	protected boolean puedeExtraer(double monto) {
 		// TODO Auto-generated method stub
@@ -13,8 +17,11 @@ public class CajaDeAhorro extends Cuenta {
 	}
 	
 	public void depositar(double monto) {
-		monto -= this.recargo(monto);
-		super.depositar(monto);
+		super.depositar(monto - this.recargo(monto)); 
+	}
+	
+	public boolean extraer(double monto) {
+		return super.extraer(monto + this.recargo(monto));
 	}
 	
 	
